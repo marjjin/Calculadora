@@ -59,3 +59,10 @@ document.addEventListener('keydown', (event) => {
         visor.textContent = "";
     }
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const loader = document.getElementById('loader');
+    const calculadora = document.querySelector('.calculadora');
+    if (loader) loader.style.display = 'none';
+    if (calculadora) calculadora.style.display = 'flex';
+});
